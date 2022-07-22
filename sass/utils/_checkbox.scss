@@ -8,14 +8,14 @@
 .checkbox__label {
     display: inline-block;
     font-style: normal;
-    font-weight: 400;
+    font-weight: var(--primary-font-weight);
     font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
 
-.checkbox__label--acctive {
+.checkbox .checkbox__label--acctive {
     color: var(--accent-color);
     text-decoration-line: underline;
 }
@@ -42,20 +42,20 @@
 
 .checkbox__input {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.checkbox__input:checked+.checkbox__icon {
-    opacity: 0;
-}
+    &:checked~.checkbox__icon--check {
+        opacity: 1;
+    }
 
-.checkbox__input:checked~.checkbox__icon--check {
-    opacity: 1;
+    &:checked+.checkbox__icon {
+        opacity: 0;
+    }
 }
 
 .checkbox__terms-condition {
-    font-family: 'Roboto';
+    font-family: var(--primary-font-family);
     font-style: normal;
-    font-weight: 400;
+    font-weight: var(--primary-font-weight);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

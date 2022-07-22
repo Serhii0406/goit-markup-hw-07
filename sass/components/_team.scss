@@ -19,7 +19,7 @@
 }
 
 .team__subtitle {
-    font-weight: 500;
+    font-weight: var(--secondary-font-weight);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -30,7 +30,7 @@
 .team__position {
 
     color: var(--secondary-text-color);
-    font-weight: 400;
+    font-weight: var(--primary-font-weight);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;

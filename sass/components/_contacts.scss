@@ -9,35 +9,35 @@
 
 .contacts__item {
     margin-right: 50px;
-}
 
-.contacts_item:nth-last-child(1) {
-    margin-right: 0;
+    &:hover {
+        fill: var(--accent-color);
+    }
+
+    &:nth-last-child(1) {
+        margin-right: 0;
+    }
 }
 
 .contacts__link {
     color: var(--secondary-text-color);
-    font-weight: 500;
+    font-weight: var(--secondary-font-weight);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contacts__link:hover,
-.contacts__link:focus {
-    color: var(--accent-color);
+    &:focus .contacts__icon {
+        fill: var(--accent-color);
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .contacts__icon {
     margin-right: 10px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts__item:hover {
-    fill: var(--accent-color);
-}
-
-.contacts__link:focus .contacts__icon {
-    fill: var(--accent-color);
 }
