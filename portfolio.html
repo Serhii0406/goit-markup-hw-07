@@ -8,13 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     </head>
 <body>
     <header class="header">
         <div class="container header__container">
             <nav class="header-content">
-                <a href="" class="logo"><span class="logo_header--blue">Web</span>Studio</a>
+                <a href="" class="logo"><span class="logo__header--blue">Web</span>Studio</a>
     
                 <ul class="site-nav">
                     <li class="site-nav__item"><a class="site-nav__link" href="index.html">Студия</a></li>
@@ -41,187 +41,196 @@
     </header>
 
     <main> 
-    <section class="section-portfolio">
+    <section class="section port">
         <div class="container">
             <h1 class="visually-hidden">Портфолио</h1>
-            <ul class="btn-list">
-                <li class="list-item"><button type="button" class="btn-port">Все</button></li>
-                <li class="list-item"><button type="button" class="btn-port">Приложения</button></li>
-                <li class="list-item"><button type="button" class="btn-port">Веб-сайты</button></li>
-                <li class="list-item"><button type="button" class="btn-port">Дизайн</button></li>
-                <li class="list-item"><button type="button" class="btn-port">Маркетинг</button></li>
+            <ul class="btn__list">
+                <li class="btn__item"><button type="button" class="btn port__btn">Все</button></li>
+                <li class="btn__item"><button type="button" class="btn port__btn">Приложения</button></li>
+                <li class="btn__item"><button type="button" class="btn port__btn">Веб-сайты</button></li>
+                <li class="btn__item"><button type="button" class="btn port__btn">Дизайн</button></li>
+                <li class="btn__item"><button type="button" class="btn port__btn">Маркетинг</button></li>
             </ul>
-
-            <ul class="port-list">
-                
-                <li class="item">
-                    <a href="#" class="port-card">
-                        <div class="port-item">
-                            <img class="port-img" src="./images/img-1.jpg" alt="Технокряк" width="370" height="294">
-                            <div class="overlay">
-                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+            <div class="card">
+                <ul class="card__list">
+                    <li class="card__item">
+                        <a href="#" class="card__link">
+                            <div class="card__wrap">
+                                <img class="card__img" src="./images/img-1.jpg" alt="Технокряк" width="370" height="294">
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="port-box">
-                            <h2 class="port-subtitle">Технокряк</h2>
-                            <p class="port-text">Веб-сайт</p>
-                        </div>
-                    </a>
-                    
-                    
-                </li>
                 
-                <li class="item">
-                    <a href="#" class="port-card"> 
-                        <div class="port-item">
-                            <img class="port-img" src="./images/img-2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
-                            <div class="overlay">
-                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            <div class="card__box">
+                                <h2 class="card__subtitle">Технокряк</h2>
+                                <p class="card__text">Веб-сайт</p>
                             </div>
-                        </div>
-                        
-                        <div class="port-box">
-                            <h2 class="port-subtitle">Постер New Orlean vs Golden Star</h2>
-                            <p class="port-text">Дизайн</p>
-                        </div>
-                    </a>
-                    
-                    
-                </li>
+                        </a>
                 
-                <li class="item">
-                    <a href="#" class="port-card"> 
-                    <div class="port-item">
-                        <img class="port-img" src="./images/img-3.jpg" alt="Ресторан Seafood" width="370" height="294">
-                        <div class="overlay">
-                            <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                                Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="port-box">
-                        <h2 class="port-subtitle">Ресторан Seafood</h2>
-                        <p class="port-text">Приложение</p>
-                    </div>
-                    </a>
-                                        
-                </li>
                 
-                <li class="item">
-                    <a href="#" class="port-card">
-                        <div class="port-item">
-                            <img class="port-img" src="./images/img-4.jpg" alt="Проект Prime" width="370" height="294">
-                            <div class="overlay">
-                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                    </li>
+                
+                    <li class="card__item">
+                        <a href="#" class="card__link">
+                            <div class="card__wrap">
+                                <img class="card__img" src="./images/img-2.jpg" alt="Постер New Orlean vs Golden Star" width="370"
+                                    height="294">
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
                             </div>
-                        </div>                        
-                        
-                        <div class="port-box">
-                            <h2 class="port-subtitle">Проект Prime</h2>
-                            <p class="port-text">Маркетинг</p>
-                        </div>
-                    </a>
-                    
-                    
-                </li>
                 
-                <li class="item">
-                    <a href="#" class="port-card">
-                        <div class="port-item">
-                            <img class="port-img" src="./images/img-5.jpg" alt="Проект Boxes" width="370" height="294">
-                            <div class="overlay">
-                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            <div class="card__box">
+                                <h2 class="card__subtitle">Постер New Orlean vs Golden Star</h2>
+                                <p class="card__text">Дизайн</p>
                             </div>
-                        </div>
-                        
-                        <div class="port-box">
-                            <h2 class="port-subtitle">Проект Boxes</h2>
-                            <p class="port-text">Приложение</p>
-                        </div>
-                    </a>
-                    
-                    
-                </li>
+                        </a>
                 
-                <li class="item"> 
-                    <a href="#" class="port-card">
-                        <div class="port-item">
-                            <img class="port-img" src="./images/img-6.jpg" alt="Inspiration has no Borders" width="370" height="294">
-                            <div class="overlay">
-                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="port-box">
-                            <h2 class="port-subtitle">Inspiration has no Borders</h2>
-                            <p class="port-text">Веб-сайт</p>                        
-                        </div>
-                    </a>
-                    
-                    
-                </li>
                 
-                <li class="item">
-                    <a href="#" class="port-card">
-                        <div class="port-item">
-                            <img class="port-img" src="./images/img-7.jpg" alt="Издание Limited Edition" width="370" height="294">
-                            <div class="overlay">
-                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="port-box">
-                            <h2 class="port-subtitle">Издание Limited Edition</h2>
-                            <p class="port-text">Дизайн</p>                        
-                        </div>
-                    </a>                   
-                </li>
+                    </li>
                 
-                <li class="item">
-                    <a href="#" class="port-card">
-                        <div class="port-item">
-                            <img class="port-img" src="./images/img-8.jpg" alt="Проект LAB" width="370" height="294">
-                            <div class="overlay">
-                        
-                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                    <li class="card__item">
+                        <a href="#" class="card__link">
+                            <div class="card__wrap">
+                                <img class="card__img" src="./images/img-3.jpg" alt="Ресторан Seafood" width="370" height="294">
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="port-box">
-                            <h2 class="port-subtitle">Проект LAB</h2 class="port-subtitle">
-                            <p class="port-text">Маркетинг</p>
-                        </div>
-                    </a>                    
-                </li>
                 
-                <li class="item">
-                    <a href="#" class="port-card">
-                        <div class="port-item">
-                            <img class="port-img" src="./images/img-9.jpg" alt="Growing Business" width="370" height="294">
-                            <div class="overlay">
-                                <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
-                                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            <div class="card__box">
+                                <h2 class="card__subtitle">Ресторан Seafood</h2>
+                                <p class="card__text">Приложение</p>
                             </div>
-                        </div>
-                        
-                        <div class="port-box">
-                            <h2 class="port-subtitle">Growing Business</h2>
-                            <p class="port-text">Приложение</p>
-                        </div>
-                    </a>
-                </li>
-
-                       
-            </ul>
-
+                        </a>
+                
+                    </li>
+                
+                    <li class="card__item">
+                        <a href="#" class="card__link">
+                            <div class="card__wrap">
+                                <img class="card__img" src="./images/img-4.jpg" alt="Проект Prime" width="370" height="294">
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                
+                            <div class="card__box">
+                                <h2 class="card__subtitle">Проект Prime</h2>
+                                <p class="card__text">Маркетинг</p>
+                            </div>
+                        </a>
+                
+                
+                    </li>
+                
+                    <li class="card__item">
+                        <a href="#" class="card__link">
+                            <div class="card__wrap">
+                                <img class="card__img" src="./images/img-5.jpg" alt="Проект Boxes" width="370" height="294">
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                
+                            <div class="card__box">
+                                <h2 class="card__subtitle">Проект Boxes</h2>
+                                <p class="card__text">Приложение</p>
+                            </div>
+                        </a>
+                
+                
+                    </li>
+                
+                    <li class="card__item">
+                        <a href="#" class="card__link">
+                            <div class="card__wrap">
+                                <img class="card__img" src="./images/img-6.jpg" alt="Inspiration has no Borders" width="370"
+                                    height="294">
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                
+                            <div class="card__box">
+                                <h2 class="card__subtitle">Inspiration has no Borders</h2>
+                                <p class="card__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                
+                
+                    </li>
+                
+                    <li class="card__item">
+                        <a href="#" class="card__link">
+                            <div class="card__wrap">
+                                <img class="card__img" src="./images/img-7.jpg" alt="Издание Limited Edition" width="370" height="294">
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                
+                            <div class="card__box">
+                                <h2 class="card__subtitle">Издание Limited Edition</h2>
+                                <p class="card__text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="card__item">
+                        <a href="#" class="card__link">
+                            <div class="card__wrap">
+                                <img class="card__img" src="./images/img-8.jpg" alt="Проект LAB" width="370" height="294">
+                                <div class="overlay">
+                
+                                    <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                
+                            <div class="card__box">
+                                <h2 class="card__subtitle">Проект LAB</h2>
+                                <p class="card__text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li class="card__item">
+                        <a href="#" class="card__link">
+                            <div class="card__wrap">
+                                <img class="card__img" src="./images/img-9.jpg" alt="Growing Business" width="370" height="294">
+                                <div class="overlay">
+                                    <p class="overlay__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>
+                
+                            <div class="card__box">
+                                <h2 class="card__subtitle">Growing Business</h2>
+                                <p class="card__text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
         </div>
    
     </section>
@@ -240,7 +249,7 @@
     
             <div class="footer__join">
                 <h3 class="footer__title">присоединяйтесь</h3>
-                <ul class="social-networks__list">
+                <ul class="social-networks">
                     <li class="social-networks__item"> <a href="" class="social-networks__link social-networks__link--bg-color">
                             <svg class="social-networks__icon social-networks__icon-white" width="20px" height="20px">
                                 <use href="./images/icons.svg#icon-instagram">
